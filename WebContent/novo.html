@@ -8,19 +8,17 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-		$(document).ready(
-				function() {
-					$("#botao_plus").click(
-							function() {
-								$("#campo:first").clone(true)
-										.find("input:text").val("").end()
-										.appendTo("#proxp:first");
-							});
-				});
+	$(document).ready(
+			function() {
+				$("#botao_plus").click(
+						function() {
+							$("#campo:first").clone(true).find("input:text")
+									.val("").end().appendTo("#proxp:first");
+						});
+			});
 </script>
 </head>
 <body>
-
 	<h1>Criar Novo</h1>
 	<form name="frmContato" action="insert">
 		<table>
@@ -33,7 +31,6 @@
 					placeholder="CPF - Somente números" class="Caixa2"></td>
 			</tr>
 			<tr>
-
 				<td>
 					<div id="proxp">
 						<div id="campo">
@@ -82,8 +79,6 @@
 								<option value="Cappuccino">Cappuccino</option>
 								<option value="Suco de fruta">Suco de fruta</option>
 								<option value="Suco verde">Suco verde</option>
-
-
 							</select>
 						</div>
 					</div> <a id="botao_plus" href="javascript:void(0)"><img
@@ -93,7 +88,6 @@
 		</table>
 		<br /> <input type="button" value="Adicionar" class="Botao1"
 			onclick="validar()">
-
 	</form>
 	<script src="scripts/validador.js"></script>
 
